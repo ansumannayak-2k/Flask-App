@@ -27,13 +27,13 @@ jobs:
 
   approve-test:
     needs: test
-    runs-on: ubuntu latest
+    runs-on: ubuntu-latest
     environment: 
-        name: productions
-        url: https://www.example.com
+      name: production
+      url: https://www.example.com
     steps:
-        name: Wait for manual approval
-        run: echo "Ready for Deployment, awaiting approval.."
+      - name: Wait for manual approval
+        run: echo "Ready for Deployment, awaiting approval..."
     
     
      
